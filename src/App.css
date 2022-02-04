@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+}
+
+header .title > svg {
+  color: #5c47d3;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.title {
+  align-self: center;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1024px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  flex: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.counter div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minus,
+.plus {
+  cursor: pointer;
+  font-size: 25px;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 26px;
+  margin: 0 10px;
+  color: #fff;
+  background-color: #5c47d3;
+  border: 1px solid #5c47d3;
+  border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.reset,
+.add-counter {
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #5c47d3;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid lightgray;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    position: inherit;
+    border-color: transparent;
+  }
+}
